@@ -1,0 +1,16 @@
+[
+  {
+    "boxValue": 400,
+    "boxColor": "серый",
+    "id": 1,
+    "picture": "",
+    "car": "Renault Logan"
+  },
+  {
+    "boxValue": 430,
+    "boxColor": "черный",
+    "id": 2,
+    "picture": "",
+    "car": "Renault Megan"
+  }
+]
