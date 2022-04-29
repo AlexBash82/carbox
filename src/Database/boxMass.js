@@ -1,6 +1,6 @@
 const boxMass = [
   {
-    boxValue: 400,
+    boxValue: 430,
     boxColor: 'серый',
     id: 1,
     picture: '',
@@ -14,7 +14,7 @@ const boxMass = [
     car: 'Renault Megan',
   },
   {
-    boxValue: 430,
+    boxValue: 550,
     boxColor: 'серый',
     id: 3,
     picture: '',
@@ -61,6 +61,13 @@ const boxMass = [
     id: 9,
     picture: '',
     car: 'Ford Scorpio',
+  },
+  {
+    boxValue: 1000,
+    boxColor: 'черный',
+    id: 10,
+    picture: '',
+    car: 'Toyota Tundra',
   },
 ]
 

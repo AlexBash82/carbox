@@ -1,48 +1,44 @@
 import React, { useState } from 'react'
+
 import Card from './Card'
 import boxArr from '../BaseLogic'
-import SideBar from './SideBar'
+import Filter from './Filter'
 
 function Cards() {
   const [boxMass, setBoxMass] = useState(boxArr)
+  const [text, setText] = useState('')
 
   function onFilterValue(prop) {
-    setBoxMass(
-      boxArr.filter(function (mas) {
-        return mas.boxValue === prop
-      })
-    )
+    setBoxMass(boxArr.filter((mas) => mas.boxValue === prop))
+    setText(String('по объему: ' + prop + ' литров'))
   }
 
   function onFilterCar(prop) {
-    setBoxMass(
-      boxArr.filter(function (mas) {
-        return mas.car === prop
-      })
-    )
+    setBoxMass(boxArr.filter((mas) => mas.car === prop))
+    setText(String('по автомобилю: ' + prop))
   }
 
   function onFilterColor(prop) {
-    setBoxMass(
-      boxArr.filter(function (mas) {
-        return mas.boxColor === prop
-      })
-    )
+    setBoxMass(boxArr.filter((mas) => mas.boxColor === prop))
+    setText(String('по цвету: ' + prop))
   }
 
   function onFilterClear() {
-    setBoxMass(() => {
-      return boxArr
-    })
+    setBoxMass(boxArr)
+    setText('')
   }
 
   return (
     <div>
-      <SideBar
+      <Filter
         onFilterValue={onFilterValue}
         onFilterClear={onFilterClear}
+        onFilterCar={onFilterCar}
         onFilterColor={onFilterColor}
+        boxArr={boxArr}
+        textFilterBy={text}
       />
+
       {boxMass.map((box) => {
         return (
           <Card
