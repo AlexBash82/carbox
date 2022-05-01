@@ -2,9 +2,19 @@
   text-align: center;
 }
 
-.Cardpicture {
-  width: 25%;
+.Card {
+  max-width: 24%;
+  border: 1px solid black;
+  border-radius: 0;
   float: left;
+  overflow: hidden;
+  margin: 2px;
+}
+
+.Cardpicture {
+  max-height: 190px;
+  border-radius: 0;
+  overflow: hidden;
 }
 
 .Cardtitle {
@@ -12,5 +22,10 @@
 }
 
 .Cardtext {
-  color: blue;
+  background-color: black;
+  font-size: 13px;
+  color: rgb(255, 51, 0);
+  position: relative;
+  padding-bottom: 0px;
+  text-align: center;
 }
