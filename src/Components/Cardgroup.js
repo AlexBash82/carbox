@@ -4,7 +4,12 @@ import Card from 'react-bootstrap/Card'
 export default function Cardd({ boxValue, boxColor, car, url, openClose, id }) {
   return (
     <>
-      <Card className="Card">
+      <Card
+        className="Card"
+        onClick={() => {
+          openClose(id)
+        }}
+      >
         <Card.Img
           variant="top"
           className="Cardpicture"

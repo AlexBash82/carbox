@@ -57,7 +57,7 @@ const boxMass = [
   },
   {
     boxValue: 460,
-    boxColor: 'черный',
+    boxColor: 'серый',
     id: 9,
     url: 'https://s38.wheelsage.org/format/picture/picture-gallery-full/ford/crown_victoria/autowp.ru_ford_crown_victoria_56.jpg',
     car: 'Ford Crown Victoria',

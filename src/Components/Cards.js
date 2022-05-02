@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react'
 import { Container } from 'react-bootstrap'
-import Card from './Card'
+
 import Cardgroup from './Cardgroup'
 
 import boxArr from '../BaseLogic'
@@ -37,18 +37,12 @@ function Cards() {
   function openClose(item) {
     selectedPhoto.current = item
     console.log(!show)
+
     setShow(!show)
   }
 
   return (
     <Container>
-      {show && (
-        <Modal
-          boxMass={boxMass}
-          openClose={openClose}
-          selectedPhoto={selectedPhoto.current}
-        />
-      )}
       <Filter
         onFilterValue={onFilterValue}
         onFilterClear={onFilterClear}
@@ -68,12 +62,16 @@ function Cards() {
             car={box.car}
             url={box.url}
             openClose={openClose}
-            onClick={() => {
-              openClose(box.id)
-            }}
           />
         )
       })}
+      {show && (
+        <Modal
+          boxMass={boxMass}
+          openClose={openClose}
+          selectedPhoto={selectedPhoto.current}
+        />
+      )}
     </Container>
   )
 }
