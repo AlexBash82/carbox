@@ -6,13 +6,13 @@ export default function Cardd({
   boxColor,
   car,
   url,
-  openClose,
+  openModal,
   id,
   boxMass,
 }) {
   return (
     <>
-      <Card className="Card" onClick={() => openClose(id, boxMass)}>
+      <Card className="Card" onClick={() => openModal(id, boxMass)}>
         <Card.Img
           variant="top"
           className="Cardpicture"

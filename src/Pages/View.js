@@ -8,15 +8,20 @@ export default function View() {
   const selectedPhoto = useRef('')
   const boxMass = useRef([])
 
-  function openClose(id, arr) {
+  function openModal(id, arr) {
     selectedPhoto.current = id
     boxMass.current = arr
-    setShow(!show)
+    setShow(true)
   }
+
+  function closeModal() {
+    setShow(false)
+  }
+
   return (
     <div>
-      <Header show={show} openClose={openClose} />
-      <Cards openClose={openClose} />
+      <Header show={show} closeModal={closeModal} />
+      <Cards openModal={openModal} />
       {show && (
         <Modal
           boxMass={boxMass.current}

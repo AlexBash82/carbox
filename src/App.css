@@ -12,22 +12,9 @@
 }
 
 .Cardpicture {
-  max-height: 190px;
+  height: 200px;
   border-radius: 0;
   overflow: hidden;
-}
-
-.Cardtitle {
-  color: blue;
-}
-
-.Cardtext {
-  background-color: black;
-  font-size: 13px;
-  color: rgb(255, 51, 0);
-  position: relative;
-  padding-bottom: 0px;
-  text-align: center;
 }
 
 .UnderHeader {

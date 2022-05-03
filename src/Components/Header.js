@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 import logo from './logo512.png'
 
-function Header({ show, openClose }) {
+function Header({ show, closeModal }) {
   return (
     <div>
       <Navbar fixed="top" collapseOnSelect expand="md" bg="dark" variant="dark">
@@ -32,7 +32,7 @@ function Header({ show, openClose }) {
             </Nav>
           </Navbar.Collapse>
           {show && (
-            <Button variant="outline-secondary" onClick={() => openClose()}>
+            <Button variant="outline-secondary" onClick={() => closeModal()}>
               Свернуть окно просмотра
             </Button>
           )}

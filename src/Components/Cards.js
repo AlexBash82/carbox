@@ -5,7 +5,7 @@ import Card from './Card'
 import boxArr from '../BaseLogic'
 import Filter from './Filter'
 
-function Cards({ openClose }) {
+function Cards({ openModal }) {
   const [boxMass, setBoxMass] = useState(boxArr)
   const [text, setText] = useState('')
 
@@ -49,7 +49,7 @@ function Cards({ openClose }) {
             boxColor={box.boxColor}
             car={box.car}
             url={box.url}
-            openClose={openClose}
+            openModal={openModal}
             boxMass={boxMass}
           />
         )

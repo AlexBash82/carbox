@@ -21,10 +21,6 @@
   justify-content: center;
 }
 
-.modal-img {
-  padding-top: 40px;
-}
-
 .modal-text {
   text-shadow: 1px 0 5px #000, 0 1px 5px #000, -1px 0 5px #000, 0 -1px 5px #000;
   color: rgb(255, 255, 187);
