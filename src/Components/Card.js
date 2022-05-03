@@ -11,14 +11,16 @@ export default function Cardd({
   boxMass,
 }) {
   return (
-    <>
+    <div className="Cards">
       <Card className="Card" onClick={() => openModal(id, boxMass)}>
-        <Card.Img
-          variant="top"
-          className="Cardpicture"
-          src={url}
-          alt="Some picture"
-        />
+        <div className="Carddiv">
+          <Card.Img
+            variant="top"
+            src={url}
+            alt="Some picture"
+            className="Cardimg"
+          />
+        </div>
         <Card.Body>
           <Card.Title>
             Автобокс: {boxValue} литров, цвет: {boxColor}
@@ -31,6 +33,6 @@ export default function Cardd({
           </small>
         </Card.Footer>
       </Card>
-    </>
+    </div>
   )
 }

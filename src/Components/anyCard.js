@@ -9,7 +9,7 @@ function Cardd({ boxValue, boxColor, car, url }) {
           <Card.Img src={url} alt="Card image" />
           <Card.ImgOverlay className="card-img-overlay">
             <Card.Title className="Cardtitle">
-              Размер бокса: {boxValue} литров, цвет: {boxColor}
+              Размер бокса: {boxValue} литров, цветfffffffff: {boxColor}
             </Card.Title>
             <Card.Text className="Cardtext">на автомобиле {car} </Card.Text>
           </Card.ImgOverlay>
