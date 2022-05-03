@@ -10,16 +10,19 @@
 }
 
 .modal-body {
+  top: 40px;
   position: relative;
 }
 
 .modal-block {
-  top: 40px;
-  position: relative;
-  height: 580px;
+  height: 570px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.modal-img {
+  padding-top: 40px;
 }
 
 .modal-text {

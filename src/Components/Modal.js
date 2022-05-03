@@ -2,8 +2,7 @@ import React from 'react'
 import Carousel from 'react-bootstrap/Carousel'
 import '../Modal.css'
 
-function Modal({ boxMass, openClose, selectedPhoto }) {
-  console.log(selectedPhoto)
+function Modal({ boxMass, selectedPhoto }) {
   return (
     <div className="modal-back">
       <div className="modal-body">
@@ -16,7 +15,6 @@ function Modal({ boxMass, openClose, selectedPhoto }) {
                     className="d-block w-100"
                     src={item.url}
                     alt="First slide"
-                    onClick={() => openClose}
                   />
                 </div>
                 <Carousel.Caption>

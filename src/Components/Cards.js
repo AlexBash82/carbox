@@ -1,13 +1,11 @@
-import React, { useState, useRef } from 'react'
+import React, { useState } from 'react'
 import { Container } from 'react-bootstrap'
 
-import Cardgroup from './Cardgroup'
-
+import Card from './Card'
 import boxArr from '../BaseLogic'
 import Filter from './Filter'
-import Modal from './Modal'
 
-function Cards() {
+function Cards({ openClose }) {
   const [boxMass, setBoxMass] = useState(boxArr)
   const [text, setText] = useState('')
 
@@ -31,18 +29,8 @@ function Cards() {
     setText('')
   }
 
-  const [show, setShow] = useState(false)
-  const selectedPhoto = useRef('')
-
-  function openClose(item) {
-    selectedPhoto.current = item
-    console.log(!show)
-
-    setShow(!show)
-  }
-
   return (
-    <Container>
+    <Container className="UnderHeader">
       <Filter
         onFilterValue={onFilterValue}
         onFilterClear={onFilterClear}
@@ -54,7 +42,7 @@ function Cards() {
 
       {boxMass.map((box, index) => {
         return (
-          <Cardgroup
+          <Card
             id={index}
             key={box.id}
             boxValue={box.boxValue}
@@ -62,16 +50,10 @@ function Cards() {
             car={box.car}
             url={box.url}
             openClose={openClose}
+            boxMass={boxMass}
           />
         )
       })}
-      {show && (
-        <Modal
-          boxMass={boxMass}
-          openClose={openClose}
-          selectedPhoto={selectedPhoto.current}
-        />
-      )}
     </Container>
   )
 }

@@ -34,7 +34,10 @@ export default function Filter({
               <Navbar.Brand aria-controls="offcanvasNavbar">
                 Включен фильтр {textFilterBy}
               </Navbar.Brand>
-              <Button variant="outline-success" onClick={() => onFilterClear()}>
+              <Button
+                variant="outline-secondary"
+                onClick={() => onFilterClear()}
+              >
                 Сбросить фильтр
               </Button>
             </>
