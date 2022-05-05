@@ -30,3 +30,31 @@
 .UnderHeader {
   margin-top: 55px;
 }
+
+.modal-back {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+}
+
+.modal-body {
+  top: 40px;
+  position: relative;
+}
+
+.modal-block {
+  height: 570px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-text {
+  text-shadow: 1px 0 5px #000, 0 1px 5px #000, -1px 0 5px #000, 0 -1px 5px #000;
+  color: rgb(255, 255, 187);
+}

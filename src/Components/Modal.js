@@ -1,6 +1,5 @@
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel'
-import '../Modal.css'
 
 function Modal({ boxMass, selectedPhoto }) {
   return (
@@ -14,7 +13,7 @@ function Modal({ boxMass, selectedPhoto }) {
                   <img
                     className="d-block w-100"
                     src={item.url}
-                    alt="First slide"
+                    alt="Some slide"
                   />
                 </div>
                 <Carousel.Caption>

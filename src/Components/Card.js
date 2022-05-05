@@ -14,12 +14,7 @@ export default function Cardd({
     <div className="Cards">
       <Card className="Card" onClick={() => openModal(id, boxMass)}>
         <div className="Carddiv">
-          <Card.Img
-            variant="top"
-            src={url}
-            alt="Some picture"
-            className="Cardimg"
-          />
+          <Card.Img variant="top" src={url} alt="Carbox" className="Cardimg" />
         </div>
         <Card.Body>
           <Card.Title>

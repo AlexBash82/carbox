@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Container } from 'react-bootstrap'
 
 import Card from './Card'
-import boxArr from '../BaseLogic'
+import boxArr from '../Database/boxMass'
 import Filter from './Filter'
 
 function Cards({ openModal }) {
