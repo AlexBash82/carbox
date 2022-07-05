@@ -1,5 +1,6 @@
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel'
+import './Modal.css'
 
 function Modal({ boxMass, selectedPhoto }) {
   return (

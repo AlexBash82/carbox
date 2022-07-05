@@ -7,7 +7,7 @@ import {
   DropdownButton,
 } from 'react-bootstrap'
 
-import '../Filter.css'
+import './Filter.css'
 
 export default function Filter({
   onFilterValue,

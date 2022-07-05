@@ -2,7 +2,7 @@ import React from 'react'
 import { Nav, NavLink, Navbar, Container, Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
-import logo from './logo512.png'
+import logo from '../../img/logo512.png'
 
 function Header({ show, closeModal }) {
   return (

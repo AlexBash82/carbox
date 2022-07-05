@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react'
-import Cards from '../Components/Cards'
-import Header from '../Components/Header'
-import Modal from '../Components/Modal'
+import Cards from '../Components/Cards/Cards.js'
+import Header from '../Components/Header/Header.js'
+import Modal from '../Components/Modal/Modal.js'
 
 export default function View() {
   const [show, setShow] = useState(false)

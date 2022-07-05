@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import { Container } from 'react-bootstrap'
-
-import Card from './Card'
-import boxArr from '../Database/boxMass'
-import Filter from './Filter'
+import './Cards.css'
+import Card from '../Card/Card.js'
+import boxArr from '../../Database/boxMass'
+import Filter from '../Filter/Filter.js'
 
 function Cards({ openModal }) {
   const [boxMass, setBoxMass] = useState(boxArr)
